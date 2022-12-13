@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,600&display=swap'); /* Alegrya Font */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap'); /* Fira Sans Condensed Font */
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap'); /* Hind Font */
+
+
+.bottomBorderTransition {
+    border-bottom: 1px solid #93827F;
+    animation: borderBottomAnimation 3s linear;
+}
+
+@keyframes borderBottomAnimation {
+    0% {
+        border-bottom: 1px solid black;
+    }
+
+    25% {
+        border-bottom: 1px solid white;
+    }
+
+   50% {
+        border-bottom: 1px solid black;
+    }
+
+    75% {
+        border-bottom: 1px solid white;
+    }
+    100% {
+        border-bottom: 1px solid #93827F;
+    }
+}
+
+#bannerLandingPage {
+    background-image: url('/img/foodBannerBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+::-webkit-scrollbar{
+    background: #FFFF;
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #2F2F2F;
+    border-radius: 5px;
+}
+
+#recipeInfoModal::-webkit-scrollbar{
+    width: 1px;
+}
+
+#recipeInfoModal::-webkit-scrollbar-thumb{
+    background: transparent;
+    border-radius: 5px;
+}
+
+#randomMealImage{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+#mainPageHeader, #mainBannerHeader {
+   font-family: 'Alegreya', serif;
+
+}
+
+h1, h2, #navList, input{
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+p, ul {
+    font-family: 'Hind', sans-serif;
+
+
+}
